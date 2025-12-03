@@ -306,13 +306,6 @@ For the included `klee-out-complex-graph-db`:
 - Extended error type support
 - Integration with CWE taxonomy
 
-## Contributing
-
-This is a research project for vulnerability detection analysis. Contributions and suggestions are welcome!
-
-## License
-
-See LICENSE file for details.
 
 ## Author
 
@@ -328,14 +321,8 @@ If you use this tool in your research, please cite:
 Graph-Based KLEE Output Analyzer
 Zeyad Abdelrazek
 Texas A&M University San Antonio
-2024
+2025
 ```
 
-## Contact
 
-For questions or issues, please open an issue on GitHub or contact the author.
-
----
-
-**Last Updated:** December 2024
 
