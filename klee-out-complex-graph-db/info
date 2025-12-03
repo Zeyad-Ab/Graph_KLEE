@@ -1,0 +1,20 @@
+klee --output-dir=klee-out-complex-graph-db --max-time=300 --max-memory=8000 --max-instructions=1000000 --max-forks=10000 --max-depth=2000 --search=dfs --emit-all-errors --check-overshift=true complex_test_linked.bc
+PID: 78651
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-02 21:46:57
+BEGIN searcher description
+DFSSearcher
+END searcher description
+Finished: 2025-12-02 21:47:37
+Elapsed: 00:00:40
+KLEE: done: explored paths = 10001
+KLEE: done: avg. constructs per query = 335
+KLEE: done: total queries = 1086
+KLEE: done: valid queries = 124
+KLEE: done: invalid queries = 962
+KLEE: done: query cex = 1086
+
+KLEE: done: total instructions = 188253
+KLEE: done: completed paths = 9994
+KLEE: done: partially completed paths = 7
+KLEE: done: generated tests = 10001

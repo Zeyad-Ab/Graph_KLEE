@@ -1,0 +1,31 @@
+array a[4] : w32 -> w8 = symbolic
+array b[4] : w32 -> w8 = symbolic
+array c[4] : w32 -> w8 = symbolic
+array index[8] : w32 -> w8 = symbolic
+array size[8] : w32 -> w8 = symbolic
+array x[4] : w32 -> w8 = symbolic
+array y[4] : w32 -> w8 = symbolic
+array z[4] : w32 -> w8 = symbolic
+(query [(Ule (ReadLSB w64 0 index)
+              150)
+         (Ule (ReadLSB w64 0 size)
+              150)
+         (Sle 4294966296
+              N0:(ReadLSB w32 0 a))
+         (Sle N0 1000)
+         (Sle 4294966296
+              N1:(ReadLSB w32 0 b))
+         (Sle N1 1000)
+         (Sle 4294966296
+              N2:(ReadLSB w32 0 c))
+         (Sle N2 1000)
+         (Sle 4294966796
+              N3:(ReadLSB w32 0 x))
+         (Sle N3 500)
+         (Sle 4294966796
+              N4:(ReadLSB w32 0 y))
+         (Sle N4 500)
+         (Eq false
+             (Sle 4294966796
+                  (ReadLSB w32 0 z)))]
+        false)
