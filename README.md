@@ -313,16 +313,6 @@ For the included `klee-out-complex-graph-db`:
 Texas A&M University San Antonio  
 Master of Science in Computer Science
 
-## Citation
-
-If you use this tool in your research, please cite:
-
-```
-Graph-Based KLEE Output Analyzer
-Zeyad Abdelrazek
-Texas A&M University San Antonio
-2025
-```
 
 
 
